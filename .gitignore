@@ -147,7 +147,7 @@ group-project/config*
 group-project/geotiff
 group-project/web_tiles
 
-*.csv 
+09-dask/*.csv 
 
 *.tif
 *.gpkg
