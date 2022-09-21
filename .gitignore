@@ -147,7 +147,7 @@ group-project/config*
 group-project/geotiff
 group-project/web_tiles
 
- 09-dask/*.csv
+ 09-dask/dg_soil_moisture.csv 
 
 *.tif
 *.gpkg
