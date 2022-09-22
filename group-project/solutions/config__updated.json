@@ -1,0 +1,95 @@
+{
+    "version": null,
+    "dir_geotiff": "geotiff",
+    "dir_web_tiles": "web_tiles",
+    "dir_3dtiles": "3dtiles",
+    "dir_staged": "/home/shares/staged",
+    "dir_input": "/home/shares/example-pdg-data",
+    "dir_footprints": "footprints",
+    "filename_staging_summary": "staging_summary.csv",
+    "filename_rasterization_events": "rasterization_events.csv",
+    "filename_rasters_summary": "rasters_summary.csv",
+    "filename_config": "config.json",
+    "ext_web_tiles": ".png",
+    "ext_input": ".gpkg",
+    "ext_staged": ".gpkg",
+    "ext_footprints": ".gpkg",
+    "prop_centroid_x": "staging_centroid_x",
+    "prop_centroid_y": "staging_centroid_y",
+    "prop_area": "staging_area",
+    "prop_tile": "staging_tile",
+    "prop_centroid_tile": "staging_centroid_tile",
+    "prop_filename": "staging_filename",
+    "prop_identifier": "staging_identifier",
+    "prop_centroid_within_tile": "staging_centroid_within_tile",
+    "input_crs": null,
+    "simplify_tolerance": null,
+    "tms_id": "WorldCRS84Quad",
+    "tile_path_structure": [
+        "style",
+        "tms",
+        "z",
+        "x",
+        "y"
+    ],
+    "z_range": [
+        0,
+        13
+    ],
+    "tile_size": [
+        256,
+        256
+    ],
+    "statistics": [
+        {
+            "name": "number_IWP_per_pixel",
+            "weight_by": "count",
+            "property": "centroids_per_pixel",
+            "aggregation_method": "sum",
+            "resampling_method": "sum",
+            "palette": [
+                "rgb(102 51 153 / 0.0)",
+                "#d93fce",
+                "lch(85% 100 85)"
+            ],
+            "val_range": [
+                0,
+                null
+            ],
+            "z_config": {
+                "13": {
+                    "val_range": [
+                        null,
+                        8.0
+                    ]
+                }
+            }
+        },
+        {
+            "name": "prop_pixel_covered_by_IWP",
+            "weight_by": "area",
+            "property": "area_per_pixel_area",
+            "aggregation_method": "sum",
+            "resampling_method": "average",
+            "palette": [
+                "rgb(102 51 153 / 0.0)",
+                "lch(85% 100 85)"
+            ],
+            "val_range": [
+                0,
+                1
+            ]
+        }
+    ],
+    "geometricError": null,
+    "z_coord": 0,
+    "deduplicate_at": null,
+    "deduplicate_method": null,
+    "deduplicate_keep_rules": [],
+    "deduplicate_overlap_tolerance": 0.5,
+    "deduplicate_overlap_both": true,
+    "deduplicate_centroid_tolerance": null,
+    "deduplicate_distance_crs": "EPSG:3857",
+    "deduplicate_clip_to_footprint": false,
+    "deduplicate_clip_method": "within"
+}

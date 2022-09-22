@@ -151,4 +151,5 @@ group-project/web_tiles
 
 *.tif
 *.gpkg
+#*.png 
 data/
